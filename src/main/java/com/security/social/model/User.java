@@ -21,9 +21,10 @@ public class User {
 	@Column(nullable = false)
 	private String email;
 
+	@Column(name = "IMAGE_URL")
 	private String imageUrl;
 
-	@Column(nullable = false)
+	@Column(nullable = false, name = "EMAIL_VERIFIED")
 	private Boolean emailVerified = false;
 
 	@JsonIgnore
@@ -33,6 +34,7 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private AuthProvider provider;
 
+	@Column(name = "PROVIDER_ID")
 	private String providerId;
 
 
