@@ -33,6 +33,7 @@ public class CookieUtils {
 	}
 
 	public static void deleteCookie(HttpServletRequest request, HttpServletResponse response, String name) {
+		System.out.println("trith malakia");
 		Cookie[] cookies = request.getCookies();
 		if (cookies != null && cookies.length > 0) {
 			for (Cookie cookie: cookies) {
